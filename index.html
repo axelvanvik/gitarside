@@ -1,17 +1,57 @@
 <style>
-    img {
-        width: 50px
-    }
+  .page {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .page-header {
+    background-image: url("https://www.rollingstone.com/wp-content/uploads/2018/09/shutterstock_5280339bk.jpg?crop=900:600&width=440");
+    background-size: cover;
+    background-position-y: 20%;
+    height: 240px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+  }
+  .page-header h1{
+    margin: 0;
+    color: white;
+  }
+  .guitar-image {
+    width: 200px;
+    float: right;
+  }
+  .guitar-entry {
+  
+  }
+  .guitar-entry-text {
+    float: left;
+  }
 </style>
 
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
 
-    </head>
-    <body>
-
+  </head>
+  <body>
+    <main class="page">
+      <div class="page-header">
         <h1>Gitarside</h1>
-        <img src="https://www.rollingstone.com/wp-content/uploads/2018/09/shutterstock_5280339bk.jpg?crop=900:600&width=440" alt="">
-    </body>
+      </div>
+
+      <div class="guitar-entry">
+          <h2 class="guitar-entry-text">Red Special</h2>
+          <p class="guitar-entry-text">Gitaren til Brian May.</p>
+          <img class="guitar-image" src="https://images.musicstore.de/images/1600/brian-may-red-special-electric-guitar-_1_GIT0008273-000.jpg" alt="">
+      </div>  
+
+      <div class="guitar-entry">
+          <h2>Red Special</h2>
+          <p>Gitaren til Brian May.</p>
+          <img class="guitar-image" src="https://images.musicstore.de/images/1600/brian-may-red-special-electric-guitar-_1_GIT0008273-000.jpg" alt="">
+      </div>
+    </main>    
+  </body>
 </html>
