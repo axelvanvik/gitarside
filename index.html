@@ -1,8 +1,9 @@
 <style>
   .page {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
   }
+
   .page-header {
     background-image: url("https://www.rollingstone.com/wp-content/uploads/2018/09/shutterstock_5280339bk.jpg?crop=900:600&width=440");
     background-size: cover;
@@ -14,19 +15,31 @@
     align-items: flex-end;
 
   }
+
   .page-header h1{
     margin: 0;
     color: white;
   }
-  .guitar-image {
-    width: 200px;
-    float: right;
-  }
+
   .guitar-entry {
-  
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
+
+  .guitar-entry-image {
+    max-width: 200px;
+    max-height: 200px
+  }
+
   .guitar-entry-text {
-    float: left;
+    color: green;
+  }
+
+  .guitar-entry-text h2 {
+    font-size: 32px;
   }
 </style>
 
@@ -42,15 +55,19 @@
       </div>
 
       <div class="guitar-entry">
-          <h2 class="guitar-entry-text">Red Special</h2>
-          <p class="guitar-entry-text">Gitaren til Brian May.</p>
-          <img class="guitar-image" src="https://images.musicstore.de/images/1600/brian-may-red-special-electric-guitar-_1_GIT0008273-000.jpg" alt="">
+        <div class="guitar-entry-text">
+          <h2>Red Special</h2>
+          <p>Gitaren til Brian May.</p>
+        </div>
+        <img class="guitar-entry-image" src="https://images.musicstore.de/images/1600/brian-may-red-special-electric-guitar-_1_GIT0008273-000.jpg" alt="">
       </div>  
 
       <div class="guitar-entry">
-          <h2>Red Special</h2>
-          <p>Gitaren til Brian May.</p>
-          <img class="guitar-image" src="https://images.musicstore.de/images/1600/brian-may-red-special-electric-guitar-_1_GIT0008273-000.jpg" alt="">
+        <div class="guitar-entry-text">
+          <h2>Frankenstrat</h2>
+          <p>Gitaren til Eddie Van Halen</p>
+        </div>
+        <img class="guitar-entry-image" src="https://bloximages.chicago2.vip.townnews.com/heraldextra.com/content/tncms/assets/v3/editorial/4/8e/48eb9c76-b605-5b2c-aea2-5557eb17cc2a/55a61ecbda4d7.image.png?resize=500%2C950" alt="">
       </div>
     </main>    
   </body>
